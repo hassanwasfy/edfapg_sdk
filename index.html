@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>edfapg_sdk | Android + iOS SDK Distribution</title>
+  <meta name="description" content="Official distribution portal for edfapg_sdk with Android Maven and iOS SwiftPM guides." />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --bg-soft: #111a2f;
+      --text: #e7edf9;
+      --muted: #a5b4d6;
+      --primary: #4f8cff;
+      --primary-2: #7f5cff;
+      --card: #121d35;
+      --ok: #18c57a;
+      --border: #233257;
+      --code: #0a1120;
+      --shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1200px 700px at 100% -10%, rgba(79, 140, 255, 0.22), transparent 60%),
+        radial-gradient(900px 600px at -5% 0%, rgba(127, 92, 255, 0.2), transparent 60%),
+        linear-gradient(180deg, #080d19 0%, #0b1220 45%, #0a101d 100%);
+      line-height: 1.55;
+    }
+
+    .container { width: min(1120px, 92%); margin: 0 auto; }
+
+    .hero {
+      padding: 72px 0 44px;
+      border-bottom: 1px solid var(--border);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(79, 140, 255, 0.12);
+      border: 1px solid rgba(79, 140, 255, 0.35);
+      color: #cfe0ff;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 6px rgba(24, 197, 122, 0.14); }
+    h1 {
+      font-size: clamp(32px, 5vw, 58px);
+      line-height: 1.08;
+      margin: 14px 0 12px;
+      letter-spacing: -0.04em;
+    }
+    .lead {
+      color: var(--muted);
+      font-size: clamp(16px, 2.1vw, 20px);
+      max-width: 860px;
+      margin: 0 0 22px;
+    }
+
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--primary-2));
+      padding: 11px 16px;
+      border-radius: 12px;
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: var(--shadow);
+    }
+    .btn.secondary {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+      border: 1px solid var(--border);
+      box-shadow: none;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+      margin: 30px 0 12px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0)), var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+    .card h3 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); }
+
+    section { padding: 26px 0; }
+    section h2 {
+      margin: 0 0 12px;
+      font-size: 28px;
+      letter-spacing: -0.02em;
+    }
+    .sub {
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+
+    .panel {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px;
+      margin: 12px 0 16px;
+    }
+    .code-title {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #c7d6f6;
+      margin-bottom: 8px;
+    }
+    pre {
+      margin: 0;
+      overflow: auto;
+      background: var(--code);
+      border: 1px solid #1f2f52;
+      border-radius: 12px;
+      padding: 14px;
+      color: #dce8ff;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+
+    .list {
+      margin: 10px 0 0 18px;
+      color: var(--muted);
+    }
+    .list li { margin: 6px 0; }
+    .kpi {
+      display: inline-block;
+      font-size: 12px;
+      color: #b5c8f8;
+      background: rgba(127, 92, 255, 0.12);
+      border: 1px solid rgba(127, 92, 255, 0.4);
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      padding: 26px 0 40px;
+      margin-top: 18px;
+      font-size: 14px;
+    }
+    a { color: #9cc2ff; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <span class="badge"><span class="dot"></span> Production Distribution Portal</span>
+      <h1>edfapg_sdk<br />Android + iOS Integration Hub</h1>
+      <p class="lead">
+        Official docs for consuming <strong>edfapg_sdk</strong> through GitHub Pages Maven (Android)
+        and Swift Package Manager (iOS), with copy-paste setup and troubleshooting.
+      </p>
+      <div class="cta-row">
+        <a class="btn" href="https://github.com/hassanwasfy/edfapg_sdk" target="_blank" rel="noreferrer">Open GitHub Repository</a>
+        <a class="btn secondary" href="https://hassanwasfy.github.io/edfapg_sdk/maven" target="_blank" rel="noreferrer">Browse Maven Repository</a>
+      </div>
+      <div style="margin-top:16px">
+        <span class="kpi">group: com.edfapay</span>
+        <span class="kpi">artifact: edfapg_sdk</span>
+        <span class="kpi">import: edfapg_sdk</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <div class="grid">
+        <article class="card">
+          <h3>Android Delivery</h3>
+          <p>Artifacts are available through GitHub Pages Maven and can also be tested with local Maven.</p>
+        </article>
+        <article class="card">
+          <h3>iOS Delivery</h3>
+          <p>XCFramework binary is resolved via Swift Package Manager from the public package repository.</p>
+        </article>
+        <article class="card">
+          <h3>Release Model</h3>
+          <p>Each version publishes Android packages, iOS binary zip, and an updated Package.swift descriptor.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="android">
+      <h2>Android Usage Guide</h2>
+      <p class="sub">Use this setup in host Android projects (Gradle Kotlin DSL).</p>
+
+      <div class="panel">
+        <div class="code-title">1) Add repositories</div>
+        <pre><code>dependencyResolutionManagement {
+    repositories {
+        maven("https://hassanwasfy.github.io/edfapg_sdk/maven")
+        google()
+        mavenCentral()
+    }
+}</code></pre>
+      </div>
+
+      <div class="panel">
+        <div class="code-title">2) Add dependency</div>
+        <pre><code>dependencies {
+    implementation("com.edfapay:edfapg_sdk:0.0.1")
+}</code></pre>
+      </div>
+
+      <div class="panel">
+        <div class="code-title">3) Optional local testing</div>
+        <pre><code>dependencyResolutionManagement {
+    repositories {
+        mavenLocal()
+        google()
+        mavenCentral()
+    }
+}</code></pre>
+      </div>
+    </section>
+
+    <section id="ios">
+      <h2>iOS Usage Guide (SwiftPM)</h2>
+      <p class="sub">Use Xcode package dependencies with the public repository URL.</p>
+
+      <div class="panel">
+        <div class="code-title">Package URL</div>
+        <pre><code>https://github.com/hassanwasfy/edfapg_sdk</code></pre>
+      </div>
+
+      <div class="panel">
+        <div class="code-title">Xcode steps</div>
+        <pre><code>1. File -> Add Package Dependencies...
+2. Enter: https://github.com/hassanwasfy/edfapg_sdk
+3. Select an exact version (for example: 0.0.1)
+4. Add product: edfapg_sdk to your app target</code></pre>
+      </div>
+
+      <div class="panel">
+        <div class="code-title">Swift import</div>
+        <pre><code>import edfapg_sdk</code></pre>
+      </div>
+    </section>
+
+    <section id="quickstart">
+      <h2>Quick Start Samples</h2>
+      <p class="sub">Minimal host initialization examples.</p>
+
+      <div class="panel">
+        <div class="code-title">Android</div>
+        <pre><code>class MainApp : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        EdfaPgSdk.init(
+            baseUrl = "ADD BASE URL HERE",
+            apiKey = "ADD API KEY HERE"
+        )
+    }
+}</code></pre>
+      </div>
+
+      <div class="panel">
+        <div class="code-title">iOS</div>
+        <pre><code>import SwiftUI
+import edfapg_sdk
+
+@main
+struct iOSApp: App {
+    init() {
+        EdfaPgSdk.shared.doInit(
+            apiKey: "ADD API KEY HERE",
+            baseUrl: "ADD BASE URL HERE"
+        )
+    }
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}</code></pre>
+      </div>
+    </section>
+
+    <section id="troubleshooting">
+      <h2>Troubleshooting</h2>
+      <ul class="list">
+        <li>Remove old package <code>paymentgateway_sdk</code> from iOS hosts before adding <code>edfapg_sdk</code>.</li>
+        <li>In Xcode: reset package caches and resolve package versions again.</li>
+        <li>Ensure Android hosts use the exact GitHub Pages Maven URL listed above.</li>
+        <li>Use published versions only (do not request a version before release is completed).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>edfapg_sdk documentation portal</div>
+      <div>Repository: <a href="https://github.com/hassanwasfy/edfapg_sdk" target="_blank" rel="noreferrer">github.com/hassanwasfy/edfapg_sdk</a></div>
+      <div>Maven index: <a href="https://hassanwasfy.github.io/edfapg_sdk/maven" target="_blank" rel="noreferrer">hassanwasfy.github.io/edfapg_sdk/maven</a></div>
+    </div>
+  </footer>
+</body>
+</html>
