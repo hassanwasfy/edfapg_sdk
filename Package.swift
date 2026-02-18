@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "edfapg_sdk",
-            url: "https://raw.githubusercontent.com/hassanwasfy/edfapg_sdk/main/ios/0.0.1-alpha/edfapg_sdk.xcframework.zip",
-            checksum: "b2a070fffd04bc711043fef7508f6225bbd3214fba879474d2b49809327bb600"
+            url: "https://raw.githubusercontent.com/hassanwasfy/edfapg_sdk/main/ios/0.0.1-alpha.1/edfapg_sdk.xcframework.zip",
+            checksum: "2413e31567d382f621a5cf70acf00a7eb2038ec469add41061829aa9d0fd13a2"
         ),
     ]
 )
