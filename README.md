@@ -143,4 +143,4 @@ struct iOSApp: App {
 ## Links
 
 - Repository: `https://github.com/hassanwasfy/edfapg_sdk`
-- Android Maven index: `https://hassanwasfy.github.io/edfapg_sdk/maven`
+- Android Maven index: `https://hassanwasfy.github.io/edfapg_sdk`
