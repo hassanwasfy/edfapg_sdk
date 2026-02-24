@@ -3,8 +3,8 @@
   <groupId>com.edfapay</groupId>
   <artifactId>edfapg_sdk-iosarm64</artifactId>
   <versioning>
-    <latest>0.0.2</latest>
-    <release>0.0.2</release>
+    <latest>0.0.2-size</latest>
+    <release>0.0.2-size</release>
     <versions>
       <version>0.0.1</version>
       <version>0.0.1-alpha.1</version>
@@ -12,7 +12,8 @@
       <version>0.0.1-alpha.3</version>
       <version>0.0.1-alpha.4</version>
       <version>0.0.2</version>
+      <version>0.0.2-size</version>
     </versions>
-    <lastUpdated>20260224181302</lastUpdated>
+    <lastUpdated>20260224190057</lastUpdated>
   </versioning>
 </metadata>
