@@ -1,0 +1,249 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../edfapg_sdk/0.0.2/edfapg_sdk-0.0.2.module",
+    "group": "com.edfapay",
+    "module": "edfapg_sdk",
+    "version": "0.0.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library-jvm-0.0.2.jar",
+          "url": "edfapg_sdk-jvm-0.0.2.jar",
+          "size": 2662128,
+          "sha512": "4c1d88ec3a9088169234d7f811275fcb2ba8bc0bc40b1b283c81a712d112c10347a9fa94e8ccb4df1a3757c40b8eac16d537a77feaeb64d8dcd051de4de3339a",
+          "sha256": "f43425cb8554f3eb789ad72634741dd3f1efd7a32185a30e01ae0b13f4787d82",
+          "sha1": "f6f1da0ad3397cdf7eaa21e020e628aacaac4ecd",
+          "md5": "f783ce28dafae9ccf865b8ce9f1b6bcb"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.androidx.navigation",
+          "module": "navigation-compose",
+          "version": {
+            "requires": "2.9.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-logging",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "tech.annexflow.compose",
+          "module": "constraintlayout-compose-multiplatform",
+          "version": {
+            "requires": "0.6.1"
+          }
+        },
+        {
+          "group": "tech.annexflow.compose",
+          "module": "constraintlayout-compose-multiplatform",
+          "version": {
+            "requires": "0.6.1-shaded-core"
+          }
+        },
+        {
+          "group": "tech.annexflow.compose",
+          "module": "constraintlayout-compose-multiplatform",
+          "version": {
+            "requires": "0.6.1-shaded"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.9.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.androidx.lifecycle",
+          "module": "lifecycle-runtime-compose",
+          "version": {
+            "requires": "2.9.6"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.7.1"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.16.4"
+          }
+        },
+        {
+          "group": "com.appmattus.crypto",
+          "module": "cryptohash",
+          "version": {
+            "requires": "1.0.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.androidx.lifecycle",
+          "module": "lifecycle-viewmodel-compose",
+          "version": {
+            "requires": "2.9.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library-jvm-0.0.2.jar",
+          "url": "edfapg_sdk-jvm-0.0.2.jar",
+          "size": 2662128,
+          "sha512": "4c1d88ec3a9088169234d7f811275fcb2ba8bc0bc40b1b283c81a712d112c10347a9fa94e8ccb4df1a3757c40b8eac16d537a77feaeb64d8dcd051de4de3339a",
+          "sha256": "f43425cb8554f3eb789ad72634741dd3f1efd7a32185a30e01ae0b13f4787d82",
+          "sha1": "f6f1da0ad3397cdf7eaa21e020e628aacaac4ecd",
+          "md5": "f783ce28dafae9ccf865b8ce9f1b6bcb"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "library-jvm-0.0.2-sources.jar",
+          "url": "edfapg_sdk-jvm-0.0.2-sources.jar",
+          "size": 71894,
+          "sha512": "f5a06647b6aa7b9e675c28c02f27151cd68d70755a18737d865cbd32bb81be65791f371ce2c3c50b26091f92140c80c54006696245dfe62354e80443bed209e1",
+          "sha256": "1080a15610ec4b3b5b575ad859e6940234f42738293e4a837725d67e864fa76c",
+          "sha1": "2dffaee7a60221ac68802d7b9cce0690ef037462",
+          "md5": "93613e3c92e56b65296a16ae3c791157"
+        }
+      ]
+    }
+  ]
+}

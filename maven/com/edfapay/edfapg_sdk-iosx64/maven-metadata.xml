@@ -3,15 +3,16 @@
   <groupId>com.edfapay</groupId>
   <artifactId>edfapg_sdk-iosx64</artifactId>
   <versioning>
-    <latest>0.0.1-alpha.4</latest>
-    <release>0.0.1-alpha.4</release>
+    <latest>0.0.2</latest>
+    <release>0.0.2</release>
     <versions>
       <version>0.0.1</version>
       <version>0.0.1-alpha.1</version>
       <version>0.0.1-alpha.2</version>
       <version>0.0.1-alpha.3</version>
       <version>0.0.1-alpha.4</version>
+      <version>0.0.2</version>
     </versions>
-    <lastUpdated>20260219121323</lastUpdated>
+    <lastUpdated>20260224181303</lastUpdated>
   </versioning>
 </metadata>
