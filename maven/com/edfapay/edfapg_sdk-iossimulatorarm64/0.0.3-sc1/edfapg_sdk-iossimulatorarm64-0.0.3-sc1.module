@@ -1,0 +1,596 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../edfapg_sdk/0.0.3-sc1/edfapg_sdk-0.0.3-sc1.module",
+    "group": "com.edfapay",
+    "module": "edfapg_sdk",
+    "version": "0.0.3-sc1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.androidx.navigation",
+          "module": "navigation-compose",
+          "version": {
+            "requires": "2.9.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-logging",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "tech.annexflow.compose",
+          "module": "constraintlayout-compose-multiplatform",
+          "version": {
+            "requires": "0.6.1"
+          }
+        },
+        {
+          "group": "tech.annexflow.compose",
+          "module": "constraintlayout-compose-multiplatform",
+          "version": {
+            "requires": "0.6.1-shaded-core"
+          }
+        },
+        {
+          "group": "tech.annexflow.compose",
+          "module": "constraintlayout-compose-multiplatform",
+          "version": {
+            "requires": "0.6.1-shaded"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.9.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.androidx.lifecycle",
+          "module": "lifecycle-runtime-compose",
+          "version": {
+            "requires": "2.9.6"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.7.1"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.16.4"
+          }
+        },
+        {
+          "group": "com.appmattus.crypto",
+          "module": "cryptohash",
+          "version": {
+            "requires": "1.0.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.androidx.lifecycle",
+          "module": "lifecycle-viewmodel-compose",
+          "version": {
+            "requires": "2.9.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library-iosSimulatorArm64Main-0.0.3-sc1.klib",
+          "url": "edfapg_sdk-iossimulatorarm64-0.0.3-sc1.klib",
+          "size": 500025,
+          "sha512": "2f6767443b9ae077fa58aa64b635fe330d67d30c16decc3e5ec698c95fa548b49a53886928d14e5e2a3fe174f42410140c7d375875b2255828d325700ae42989",
+          "sha256": "0d4045fa96cbd04a1f46afc63c4599bf1f8e2ea157aa8db7011d3797b8c6e21a",
+          "sha1": "b0548b1e08596c5c6ab5b95830288f22cf2ac490",
+          "md5": "b918c1edc54f85fe4537e69c1f65da72"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "library-iossimulatorarm64-0.0.3-sc1-sources.jar",
+          "url": "edfapg_sdk-iossimulatorarm64-0.0.3-sc1-sources.jar",
+          "size": 74278,
+          "sha512": "34e2e72d1cfd055db5003f3315a0b60596f21185033db02dd68592534aad20c3d788c6a70a80cd9ef8af1bb51e6f2aa8f0343547e0b5a9e2799f46bfa511a807",
+          "sha256": "23b810fd3483a33c3979c91614d6ef641660aa6c87a3a43a886e949af4376d4c",
+          "sha1": "180667cb5b676a9a4f78ebc9aa0e868e2ca5f603",
+          "md5": "68d1cc87f6c16998bba7365f66d7c9a8"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.androidx.navigation",
+          "module": "navigation-compose",
+          "version": {
+            "requires": "2.9.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-logging",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "tech.annexflow.compose",
+          "module": "constraintlayout-compose-multiplatform",
+          "version": {
+            "requires": "0.6.1"
+          }
+        },
+        {
+          "group": "tech.annexflow.compose",
+          "module": "constraintlayout-compose-multiplatform",
+          "version": {
+            "requires": "0.6.1-shaded-core"
+          }
+        },
+        {
+          "group": "tech.annexflow.compose",
+          "module": "constraintlayout-compose-multiplatform",
+          "version": {
+            "requires": "0.6.1-shaded"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.9.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.androidx.lifecycle",
+          "module": "lifecycle-runtime-compose",
+          "version": {
+            "requires": "2.9.6"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.7.1"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.16.4"
+          }
+        },
+        {
+          "group": "com.appmattus.crypto",
+          "module": "cryptohash",
+          "version": {
+            "requires": "1.0.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.androidx.lifecycle",
+          "module": "lifecycle-viewmodel-compose",
+          "version": {
+            "requires": "2.9.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library-0.0.3-sc1.kotlin_resources.zip",
+          "url": "edfapg_sdk-iossimulatorarm64-0.0.3-sc1-kotlin_resources.kotlin_resources.zip",
+          "size": 2169564,
+          "sha512": "b789b94367e8134343f5cc222b6cd480e6d43646bc3bf235c2b8724b506992be6448195ce352b90a279b0d6b2ba1f555fe1e1e09f6584a986dc12f993a0580ef",
+          "sha256": "debd805ef647fef9d09c4c637b5335b4bbdc13dafde896465b9bc90c215e6d78",
+          "sha1": "78589235312a5f48df13220ad880c6f4c0880cff",
+          "md5": "db42591aaf929d0f5a1e3aed4ede99ee"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.androidx.navigation",
+          "module": "navigation-compose",
+          "version": {
+            "requires": "2.9.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-logging",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "tech.annexflow.compose",
+          "module": "constraintlayout-compose-multiplatform",
+          "version": {
+            "requires": "0.6.1"
+          }
+        },
+        {
+          "group": "tech.annexflow.compose",
+          "module": "constraintlayout-compose-multiplatform",
+          "version": {
+            "requires": "0.6.1-shaded-core"
+          }
+        },
+        {
+          "group": "tech.annexflow.compose",
+          "module": "constraintlayout-compose-multiplatform",
+          "version": {
+            "requires": "0.6.1-shaded"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.9.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.androidx.lifecycle",
+          "module": "lifecycle-runtime-compose",
+          "version": {
+            "requires": "2.9.6"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.7.1"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.16.4"
+          }
+        },
+        {
+          "group": "com.appmattus.crypto",
+          "module": "cryptohash",
+          "version": {
+            "requires": "1.0.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.androidx.lifecycle",
+          "module": "lifecycle-viewmodel-compose",
+          "version": {
+            "requires": "2.9.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library-iossimulatorarm64-0.0.3-sc1-metadata.jar",
+          "url": "edfapg_sdk-iossimulatorarm64-0.0.3-sc1-metadata.jar",
+          "size": 5554,
+          "sha512": "f9a52819ef1ea9ea25d2d573fd1b6db5cf0c6a19abfd4d59c59cb5237c88be01c52d0ce46e4a9d126277929b3e984793ee610e65a0fb6e54facd9b832d1ce7d7",
+          "sha256": "b45e4a53295b7be27ab1d4a959162cadfa662edacb0b98f791e8b7c464f27901",
+          "sha1": "79dceb1ec8a244b786c9438a86c43c09db05b4a3",
+          "md5": "abe96121682a30a9754d55ec5169432d"
+        }
+      ]
+    }
+  ]
+}
